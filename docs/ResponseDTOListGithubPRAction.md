@@ -1,0 +1,29 @@
+# ResponseDTOListGithubPRAction
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**status** | [**StatusEnum**](#StatusEnum) |  |  [optional]
+**data** | [**List&lt;DataEnum&gt;**](#List&lt;DataEnum&gt;) |  |  [optional]
+**metaData** | **Object** |  |  [optional]
+**correlationId** | **String** |  |  [optional]
+
+<a name="StatusEnum"></a>
+## Enum: StatusEnum
+Name | Value
+---- | -----
+SUCCESS | &quot;SUCCESS&quot;
+FAILURE | &quot;FAILURE&quot;
+ERROR | &quot;ERROR&quot;
+
+<a name="List<DataEnum>"></a>
+## Enum: List&lt;DataEnum&gt;
+Name | Value
+---- | -----
+CLOSE | &quot;CLOSE&quot;
+EDIT | &quot;EDIT&quot;
+OPEN | &quot;OPEN&quot;
+REOPEN | &quot;REOPEN&quot;
+LABEL | &quot;LABEL&quot;
+UNLABEL | &quot;UNLABEL&quot;
+SYNCHRONIZE | &quot;SYNCHRONIZE&quot;

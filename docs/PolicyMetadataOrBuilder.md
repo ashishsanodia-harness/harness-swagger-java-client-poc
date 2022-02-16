@@ -1,0 +1,33 @@
+# PolicyMetadataOrBuilder
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**identifier** | **String** |  |  [optional]
+**severity** | **String** |  |  [optional]
+**error** | **String** |  |  [optional]
+**created** | **Long** |  |  [optional]
+**updated** | **Long** |  |  [optional]
+**accountId** | **String** |  |  [optional]
+**status** | **String** |  |  [optional]
+**policyName** | **String** |  |  [optional]
+**policyId** | **String** |  |  [optional]
+**policyIdBytes** | [**ByteString**](ByteString.md) |  |  [optional]
+**policyNameBytes** | [**ByteString**](ByteString.md) |  |  [optional]
+**severityBytes** | [**ByteString**](ByteString.md) |  |  [optional]
+**denyMessagesList** | **List&lt;String&gt;** |  |  [optional]
+**denyMessagesCount** | **Integer** |  |  [optional]
+**statusBytes** | [**ByteString**](ByteString.md) |  |  [optional]
+**accountIdBytes** | [**ByteString**](ByteString.md) |  |  [optional]
+**orgIdBytes** | [**ByteString**](ByteString.md) |  |  [optional]
+**projectId** | **String** |  |  [optional]
+**projectIdBytes** | [**ByteString**](ByteString.md) |  |  [optional]
+**errorBytes** | [**ByteString**](ByteString.md) |  |  [optional]
+**identifierBytes** | [**ByteString**](ByteString.md) |  |  [optional]
+**orgId** | **String** |  |  [optional]
+**allFields** | **Map&lt;String, Object&gt;** |  |  [optional]
+**initializationErrorString** | **String** |  |  [optional]
+**descriptorForType** | [**Descriptor**](Descriptor.md) |  |  [optional]
+**defaultInstanceForType** | [**Message**](Message.md) |  |  [optional]
+**unknownFields** | [**UnknownFieldSet**](UnknownFieldSet.md) |  |  [optional]
+**initialized** | **Boolean** |  |  [optional]

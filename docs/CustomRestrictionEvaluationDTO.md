@@ -1,0 +1,83 @@
+# CustomRestrictionEvaluationDTO
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**accountIdentifier** | **String** |  |  [optional]
+**featureRestrictionName** | [**FeatureRestrictionNameEnum**](#FeatureRestrictionNameEnum) |  |  [optional]
+**moduleType** | [**ModuleTypeEnum**](#ModuleTypeEnum) |  |  [optional]
+**edition** | [**EditionEnum**](#EditionEnum) |  |  [optional]
+
+<a name="FeatureRestrictionNameEnum"></a>
+## Enum: FeatureRestrictionNameEnum
+Name | Value
+---- | -----
+TEST1 | &quot;TEST1&quot;
+TEST2 | &quot;TEST2&quot;
+TEST3 | &quot;TEST3&quot;
+TEST4 | &quot;TEST4&quot;
+TEST5 | &quot;TEST5&quot;
+TEST6 | &quot;TEST6&quot;
+TEST7 | &quot;TEST7&quot;
+PERSPECTIVES | &quot;PERSPECTIVES&quot;
+CCM_K8S_CLUSTERS | &quot;CCM_K8S_CLUSTERS&quot;
+CCM_AUTOSTOPPING_RULES | &quot;CCM_AUTOSTOPPING_RULES&quot;
+MULTIPLE_ORGANIZATIONS | &quot;MULTIPLE_ORGANIZATIONS&quot;
+MULTIPLE_PROJECTS | &quot;MULTIPLE_PROJECTS&quot;
+INTEGRATED_APPROVALS_WITH_HARNESS_UI | &quot;INTEGRATED_APPROVALS_WITH_HARNESS_UI&quot;
+INTEGRATED_APPROVALS_WITH_JIRA | &quot;INTEGRATED_APPROVALS_WITH_JIRA&quot;
+SECRET_MANAGERS | &quot;SECRET_MANAGERS&quot;
+DEPLOYMENTS | &quot;DEPLOYMENTS&quot;
+INITIAL_DEPLOYMENTS | &quot;INITIAL_DEPLOYMENTS&quot;
+DEPLOYMENTS_PER_MONTH | &quot;DEPLOYMENTS_PER_MONTH&quot;
+SERVICES | &quot;SERVICES&quot;
+BUILDS | &quot;BUILDS&quot;
+SAML_SUPPORT | &quot;SAML_SUPPORT&quot;
+OAUTH_SUPPORT | &quot;OAUTH_SUPPORT&quot;
+LDAP_SUPPORT | &quot;LDAP_SUPPORT&quot;
+TWO_FACTOR_AUTH_SUPPORT | &quot;TWO_FACTOR_AUTH_SUPPORT&quot;
+CUSTOM_ROLES | &quot;CUSTOM_ROLES&quot;
+CUSTOM_RESOURCE_GROUPS | &quot;CUSTOM_RESOURCE_GROUPS&quot;
+MAX_TOTAL_BUILDS | &quot;MAX_TOTAL_BUILDS&quot;
+MAX_BUILDS_PER_MONTH | &quot;MAX_BUILDS_PER_MONTH&quot;
+ACTIVE_COMMITTERS | &quot;ACTIVE_COMMITTERS&quot;
+TEST_INTELLIGENCE | &quot;TEST_INTELLIGENCE&quot;
+TEMPLATE_SERVICE | &quot;TEMPLATE_SERVICE&quot;
+K8S_BG_SWAP_SERVICES | &quot;K8S_BG_SWAP_SERVICES&quot;
+K8S_BLUE_GREEN_DEPLOY | &quot;K8S_BLUE_GREEN_DEPLOY&quot;
+K8S_APPLY | &quot;K8S_APPLY&quot;
+K8S_DELETE | &quot;K8S_DELETE&quot;
+K8S_CANARY_DELETE | &quot;K8S_CANARY_DELETE&quot;
+K8S_ROLLING_DEPLOY | &quot;K8S_ROLLING_DEPLOY&quot;
+K8S_CANARY_DEPLOY | &quot;K8S_CANARY_DEPLOY&quot;
+K8S_SCALE | &quot;K8S_SCALE&quot;
+K8S_ROLLING_ROLLBACK | &quot;K8S_ROLLING_ROLLBACK&quot;
+TERRAFORM_APPLY | &quot;TERRAFORM_APPLY&quot;
+TERRAFORM_PLAN | &quot;TERRAFORM_PLAN&quot;
+TERRAFORM_DESTROY | &quot;TERRAFORM_DESTROY&quot;
+TERRAFORM_ROLLBACK | &quot;TERRAFORM_ROLLBACK&quot;
+INTEGRATED_APPROVALS_WITH_SERVICE_NOW | &quot;INTEGRATED_APPROVALS_WITH_SERVICE_NOW&quot;
+DEVELOPERS | &quot;DEVELOPERS&quot;
+MONTHLY_ACTIVE_USERS | &quot;MONTHLY_ACTIVE_USERS&quot;
+
+<a name="ModuleTypeEnum"></a>
+## Enum: ModuleTypeEnum
+Name | Value
+---- | -----
+CD | &quot;CD&quot;
+CI | &quot;CI&quot;
+CV | &quot;CV&quot;
+CF | &quot;CF&quot;
+CE | &quot;CE&quot;
+CORE | &quot;CORE&quot;
+PMS | &quot;PMS&quot;
+TEMPLATESERVICE | &quot;TEMPLATESERVICE&quot;
+
+<a name="EditionEnum"></a>
+## Enum: EditionEnum
+Name | Value
+---- | -----
+COMMUNITY | &quot;COMMUNITY&quot;
+FREE | &quot;FREE&quot;
+TEAM | &quot;TEAM&quot;
+ENTERPRISE | &quot;ENTERPRISE&quot;
