@@ -85,7 +85,7 @@ public class FilterProperties {
   private FilterTypeEnum filterType = null;
 
   public FilterProperties() {
-    this.filterType = this.getClass().getSimpleName();
+//    this.filterType = this.getClass().getSimpleName();
   }
   public FilterProperties tags(Map<String, String> tags) {
     this.tags = tags;

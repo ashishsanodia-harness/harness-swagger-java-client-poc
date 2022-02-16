@@ -75,7 +75,7 @@ public class NotificationSettingConfigDTO {
   private TypeEnum type = null;
 
   public NotificationSettingConfigDTO() {
-    this.type = this.getClass().getSimpleName();
+//    this.type = this.getClass().getSimpleName();
   }
   public NotificationSettingConfigDTO type(TypeEnum type) {
     this.type = type;

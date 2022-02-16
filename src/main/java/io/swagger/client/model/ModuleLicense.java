@@ -232,7 +232,7 @@ public class ModuleLicense {
   private Long lastModifiedAt = null;
 
   public ModuleLicense() {
-    this.moduleType = this.getClass().getSimpleName();
+//    this.moduleType = this.getClass().getSimpleName();
   }
   public ModuleLicense id(String id) {
     this.id = id;

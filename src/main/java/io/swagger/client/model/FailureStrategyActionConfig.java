@@ -78,7 +78,7 @@ public class FailureStrategyActionConfig {
   private TypeEnum type = null;
 
   public FailureStrategyActionConfig() {
-    this.type = this.getClass().getSimpleName();
+//    this.type = this.getClass().getSimpleName();
   }
   public FailureStrategyActionConfig type(TypeEnum type) {
     this.type = type;

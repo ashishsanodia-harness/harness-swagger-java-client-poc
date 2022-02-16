@@ -75,7 +75,7 @@ public class NGAuthSettings {
   private SettingsTypeEnum settingsType = null;
 
   public NGAuthSettings() {
-    this.settingsType = this.getClass().getSimpleName();
+//    this.settingsType = this.getClass().getSimpleName();
   }
   public NGAuthSettings settingsType(SettingsTypeEnum settingsType) {
     this.settingsType = settingsType;

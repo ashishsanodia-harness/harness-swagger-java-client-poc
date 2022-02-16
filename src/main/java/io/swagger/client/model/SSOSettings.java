@@ -110,7 +110,7 @@ public class SSOSettings {
   private String accountId = null;
 
   public SSOSettings() {
-    this.type = this.getClass().getSimpleName();
+//    this.type = this.getClass().getSimpleName();
   }
   public SSOSettings uuid(String uuid) {
     this.uuid = uuid;

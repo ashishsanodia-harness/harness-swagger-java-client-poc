@@ -74,7 +74,7 @@ public class SecretValidationMetaData {
   private TypeEnum type = null;
 
   public SecretValidationMetaData() {
-    this.type = this.getClass().getSimpleName();
+//    this.type = this.getClass().getSimpleName();
   }
   public SecretValidationMetaData type(TypeEnum type) {
     this.type = type;

@@ -75,7 +75,7 @@ public class NotificationSettingConfig {
   private TypeEnum type = null;
 
   public NotificationSettingConfig() {
-    this.type = this.getClass().getSimpleName();
+//    this.type = this.getClass().getSimpleName();
   }
   public NotificationSettingConfig type(TypeEnum type) {
     this.type = type;

@@ -98,7 +98,7 @@ public class SourceCodeManager {
   private TypeEnum type = null;
 
   public SourceCodeManager() {
-    this.type = this.getClass().getSimpleName();
+//    this.type = this.getClass().getSimpleName();
   }
   public SourceCodeManager id(String id) {
     this.id = id;

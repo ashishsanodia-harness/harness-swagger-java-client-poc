@@ -172,7 +172,7 @@ public class LicensesWithSummary {
   private Long maxExpiryTime = null;
 
   public LicensesWithSummary() {
-    this.moduleType = this.getClass().getSimpleName();
+//    this.moduleType = this.getClass().getSimpleName();
   }
   public LicensesWithSummary edition(EditionEnum edition) {
     this.edition = edition;

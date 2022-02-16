@@ -78,7 +78,7 @@ public class RestrictionMetadata {
   private RestrictionTypeEnum restrictionType = null;
 
   public RestrictionMetadata() {
-    this.restrictionType = this.getClass().getSimpleName();
+//    this.restrictionType = this.getClass().getSimpleName();
   }
   public RestrictionMetadata restrictionType(RestrictionTypeEnum restrictionType) {
     this.restrictionType = restrictionType;
