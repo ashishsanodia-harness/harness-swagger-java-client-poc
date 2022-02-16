@@ -154,9 +154,9 @@ public class ResponseDTOMapWebhookSourceRepoListWebhookEvent {
     return this;
   }
 
-  public ResponseDTOMapWebhookSourceRepoListWebhookEvent putDataItem(String key, List<InnerEnum> dataItem) {
+  public ResponseDTOMapWebhookSourceRepoListWebhookEvent putDataItem(String key, List<String> dataItem) {
     if (this.data == null) {
-      this.data = new HashMap<String, InnerEnum<String>>();
+      this.data = new HashMap<String, List<String>>();
     }
     this.data.put(key, dataItem);
     return this;
