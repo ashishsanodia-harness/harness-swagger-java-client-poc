@@ -24,7 +24,6 @@ import io.swagger.client.model.ParserTimestamp;
 import io.swagger.client.model.UnknownFieldSet;
 import io.swagger.v3.oas.annotations.media.Schema;
 import java.io.IOException;
-import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
