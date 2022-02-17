@@ -14,6 +14,8 @@ package io.swagger.client.model;
 
 import java.util.Objects;
 import java.util.Arrays;
+
+import com.google.gson.JsonElement;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -126,7 +128,7 @@ public class ConnectorInfo {
   private TypeEnum type = null;
 
   @SerializedName("spec")
-  private ConnectorConfig spec = null;
+  private JsonElement spec = null;
 
   public ConnectorInfo name(String name) {
     this.name = name;
@@ -262,7 +264,7 @@ public class ConnectorInfo {
     this.type = type;
   }
 
-  public ConnectorInfo spec(ConnectorConfig spec) {
+  public ConnectorInfo spec(JsonElement spec) {
     this.spec = spec;
     return this;
   }
@@ -272,11 +274,11 @@ public class ConnectorInfo {
    * @return spec
   **/
   @Schema(required = true, description = "")
-  public ConnectorConfig getSpec() {
+  public JsonElement getSpec() {
     return spec;
   }
 
-  public void setSpec(ConnectorConfig spec) {
+  public void setSpec(JsonElement spec) {
     this.spec = spec;
   }
 
