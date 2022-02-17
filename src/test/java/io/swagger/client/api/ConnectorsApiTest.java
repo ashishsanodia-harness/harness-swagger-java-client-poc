@@ -12,10 +12,16 @@
 
 package io.swagger.client.api;
 
+import com.google.gson.Gson;
+import io.swagger.client.ApiClient;
+import io.swagger.client.Configuration;
+import io.swagger.client.JSON;
 import io.swagger.client.model.Connector;
 import io.swagger.client.model.ConnectorFilterProperties;
+import io.swagger.client.model.ConnectorResponse;
 import io.swagger.client.model.Error;
 import io.swagger.client.model.Failure;
+import io.swagger.client.model.GithubConnector;
 import io.swagger.client.model.ResponseDTOBoolean;
 import io.swagger.client.model.ResponseDTOConnectorCatalogueResponse;
 import io.swagger.client.model.ResponseDTOConnectorResponse;
@@ -25,6 +31,7 @@ import io.swagger.client.model.ResponseDTOFieldValues;
 import io.swagger.client.model.ResponseDTOListConnectorResponse;
 import io.swagger.client.model.ResponseDTOPageResponseConnectorResponse;
 import io.swagger.client.model.ResponseDTOString;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.Ignore;
 
@@ -41,8 +48,15 @@ import java.util.Map;
 @Ignore
 public class ConnectorsApiTest {
 
-    private final ConnectorsApi api = new ConnectorsApi();
+    private ConnectorsApi api = new ConnectorsApi();
 
+    @Before
+    public void setup(){
+        ApiClient defaultClient = Configuration.getDefaultApiClient();
+        defaultClient.setBasePath("https://app.harness.io/gateway");
+        defaultClient.setVerifyingSsl(false);
+        defaultClient.addDefaultHeader("x-api-key", "<replace-with-your-api-key>");
+    }
     /**
      * Creates a Connector
      *
@@ -141,7 +155,9 @@ public class ConnectorsApiTest {
         Boolean getDefaultFromOtherRepo = null;
         ResponseDTOConnectorResponse response = api.getConnector(accountIdentifier, identifier, orgIdentifier, projectIdentifier, branch, repoIdentifier, getDefaultFromOtherRepo);
 
-        // TODO: test validations
+        System.out.println("connectorResponse = " + response.getData());
+        System.out.println("connectorResponse type = " + response.getData().getConnector().getType());
+
     }
     /**
      * Gets the Connector catalogue by Account Identifier
@@ -180,8 +196,17 @@ public class ConnectorsApiTest {
         String branch = null;
         String repoIdentifier = null;
         Boolean getDefaultFromOtherRepo = null;
+
         ResponseDTOPageResponseConnectorResponse response = api.getConnectorList(accountIdentifier, pageIndex, pageSize, orgIdentifier, projectIdentifier, searchTerm, type, category, sourceCategory, branch, repoIdentifier, getDefaultFromOtherRepo);
 
+        System.out.println("response = " + response);
+        System.out.println("status = " + response.getStatus());
+        List<ConnectorResponse> content = response.getData().getContent();
+        System.out.println("data = " + content);
+
+        for (ConnectorResponse connectorResponse: content) {
+            System.out.println("connectorResponse type = " + connectorResponse.getConnector().getType());
+        }
         // TODO: test validations
     }
     /**
