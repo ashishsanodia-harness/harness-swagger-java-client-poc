@@ -21,13 +21,13 @@ Building the API client library requires:
 To install the API client library to your local Maven repository, simply execute:
 
 ```shell
-mvn clean install
+mvn clean install -DcreateChecksum=true -DgeneratePom=true 
 ```
 
-To deploy it to a remote Maven repository instead, configure the settings of the repository and execute:
+To deploy it to a remote JFrog artifactory instead, configure the settings of the repository and execute:
 
 ```shell
-mvn clean deploy
+mvn -s ./settings.xml deploy -Dusername="username" -Dpassword=apiKey -P release
 ```
 
 Refer to the [OSSRH Guide](http://central.sonatype.org/pages/ossrh-guide.html) for more information.
@@ -38,10 +38,9 @@ Add this dependency to your project's POM:
 
 ```xml
 <dependency>
-  <groupId>io.swagger</groupId>
-  <artifactId>swagger-java-client</artifactId>
+  <groupId>io.harness</groupId>
+  <artifactId>harness-java-client</artifactId>
   <version>1.0.0</version>
-  <scope>compile</scope>
 </dependency>
 ```
 
@@ -50,7 +49,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "io.swagger:swagger-java-client:1.0.0"
+compile "io.harness:harness-java-client:1.0.0"
 ```
 
 ### Others
